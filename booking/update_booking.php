@@ -49,6 +49,13 @@ if (isset($_POST["submit"])) {
     }
 }
 
+$class = "show";
+$class2 ="hidden";
+if (isset($_SESSION["adm"])) {
+    $class = "hidden";
+    $class2 = "show";
+}
+
 
 mysqli_close($connect);
 ?>
@@ -67,6 +74,10 @@ mysqli_close($connect);
             margin: auto;
             margin-top: 100px;
             width: 60%;
+        }
+
+        .hidden{
+            display: none;
         }
 
         .img-thumbnail {
@@ -142,7 +153,8 @@ mysqli_close($connect);
                     </td>
                 </tr>
             </table>
-            <a href="../products/index.php"><button class="btn btn-warning" type="button">Back</button></a>
+            <a href="../home.php"><button class="btn btn-warning <?=$class?>>" type="button">Back</button></a>
+            <a href="../dashBoard.php"><button class="btn btn-warning <?=$class2?>" type="button">Back</button></a>
         </form>
     </fieldset>
     </div>
