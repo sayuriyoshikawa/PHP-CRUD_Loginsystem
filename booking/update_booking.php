@@ -82,6 +82,12 @@ mysqli_close($connect);
 </head>
 
 <body>
+<nav class="navbar navbar-expand-lg navbar">
+      <div class="container-fluid">
+         <a class="navbar-brand text-white fw-bold" href="index.php">Restaurant booking system</a>
+
+      </div>
+   </nav>
     <div class="container">
     <div class="<?php echo $class; ?>" role="alert">
             <p><?php echo ($message) ?? ''; ?></p>

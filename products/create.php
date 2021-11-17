@@ -38,6 +38,13 @@ while ($row = $result->fetch_array(MYSQLI_ASSOC)){
        </style>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar">
+      <div class="container-fluid">
+         <a class="navbar-brand text-white fw-bold" href="index.php">Restaurant booking system</a>
+
+         </div>
+      </div>
+   </nav>
 <fieldset>
            <legend class='h2'>Add Product</legend>
            <form action="actions/a_create.php" method= "post" enctype="multipart/form-data">

@@ -69,8 +69,7 @@ if (isset($_POST["submit"])) {
 $class = "show";
 
 if (isset($_SESSION["user"])) {
-    $class="hidden";
- 
+    $class = "hidden";
 }
 
 
@@ -101,13 +100,18 @@ mysqli_close($connect);
         }
 
 
-        .hidden{
+        .hidden {
             display: none;
         }
     </style>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fw-bold" href="index.php">Restaurant booking system</a>
+        </div>
+    </nav>
     <div class="container">
         <div class="<?php echo $class; ?>" role="alert">
             <p><?php echo ($message) ?? ''; ?></p>
@@ -140,12 +144,15 @@ mysqli_close($connect);
                 </tr>
                 <tr class="<?php echo $class ?>">
                     <th> Status</th>
-                    <td><input class="form-check-input" type="radio" name="status" id="flexRadioDefault1" value="adm" <?php if($status == "adm"){ echo "checked";} ?>>
+                    <td><input class="form-check-input" type="radio" name="status" id="flexRadioDefault1" value="adm" <?php if ($status == "adm") {
+                                                                                                                            echo "checked";
+                                                                                                                        } ?>>
                         <label class="form-check-label" for="flexRadioDefault1">
                             Administrator
                         </label>
-                        <input class="form-check-input" type="radio" name="status" id="flexRadioDefault2" value ="user" 
-                        <?php if($status == "user"){ echo "checked";} ?>>
+                        <input class="form-check-input" type="radio" name="status" id="flexRadioDefault2" value="user" <?php if ($status == "user") {
+                                                                                                                            echo "checked";
+                                                                                                                        } ?>>
                         <label class="form-check-label" for="flexRadioDefault2">User
                         </label>
                     </td>

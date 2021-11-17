@@ -54,6 +54,12 @@ if ($_GET['id']) {
        </style>
    </head>
    <body>
+   <nav class="navbar navbar-expand-lg navbar">
+      <div class="container-fluid">
+         <a class="navbar-brand text-white fw-bold" href="index.php">Restaurant booking system</a>
+
+      </div>
+   </nav>
        <fieldset>
            <legend class='h2 mb-3'>Delete request <img class='img-thumbnail rounded-circle' src='pictures/<?php echo $picture ?>' alt="<?php echo $name ?>"></legend>
            <h5>You have selected the data below:</h5>
