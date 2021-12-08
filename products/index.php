@@ -124,7 +124,7 @@ mysqli_close($connect);
       <div class="d-flex justify-content-end">
         <a href="create.php"><button class="btn add <?= $class2 ?>" type="button">Add product</button></a>
         <a href="../dashBoard.php"><button class="btn back ms-5 <?= $class2 ?>" type="button">Back to dashboard</button></a>
-        <a href="../dashBoard.php"><button class="btn btn home ms-5 <?= $class3 ?>" type="button">Home</button></a>
+        <a href="../home.php"><button class="btn btn home ms-5 <?= $class3 ?>" type="button">Home</button></a>
         <a href="../logout.php?logout"><button class="btn btn signout ms-3" type="button">Sign Out</button></a>
       </div>
     </div>

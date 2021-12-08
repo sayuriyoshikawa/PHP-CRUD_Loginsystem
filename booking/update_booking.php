@@ -85,10 +85,6 @@ mysqli_close($connect);
             height: 70px !important;
         }
 
-
-        .hidden {
-            display: none;
-        }
     </style>
 </head>
 
@@ -153,7 +149,7 @@ mysqli_close($connect);
                     </td>
                 </tr>
             </table>
-            <a href="../home.php"><button class="btn btn-warning <?=$class?>>" type="button">Back</button></a>
+            <a href="../home.php"><button class="btn btn-warning <?=$class?>" type="button">Back</button></a>
             <a href="../dashBoard.php"><button class="btn btn-warning <?=$class2?>" type="button">Back</button></a>
         </form>
     </fieldset>

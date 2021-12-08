@@ -73,23 +73,37 @@ mysqli_close($connect);
 
 
     <style>
+        .bg {
+            background-image: url("pictures/backg.jpg");
+            
+        }
         form {
-            width: 40vw;
+            width: 30vw;
             min-width: 300px;
             margin: auto;
+            background-color: rgb(245,246,248, 0.8);
+            margin-top: 30vh;
         }
+        .row {
+            height: 100vh;
+            width: 98vw;
+        }
+
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar">
+    <div class="bg">
+    <!-- <nav class="navbar navbar-expand-lg navbar">
         <div class="container-fluid">
             <a class="navbar-brand text-white fw-bold" href="index.php">Restaurant booking system</a>
 
         </div>
-    </nav>
+    </nav> -->
 
-    <div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-7"></div>
+        <div class="col-lg-5">
         <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
             <h2>LogIn</h2>
             <hr />
@@ -109,6 +123,8 @@ mysqli_close($connect);
             <hr />
             <a href="register.php">Not registered yet? Click here</a>
         </form>
+        </div>
+    </div>
     </div>
 </body>
 

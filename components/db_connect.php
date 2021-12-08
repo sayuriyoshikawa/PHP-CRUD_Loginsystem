@@ -1,6 +1,6 @@
 <?php 
 
-$hostname = "127.0.0.1";
+$hostname = "127.0.0.1:3307";
 $username = "root";
 $password = "";
 $dbname = "food_delivery";

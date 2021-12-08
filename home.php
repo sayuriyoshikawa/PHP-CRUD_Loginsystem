@@ -111,6 +111,7 @@ mysqli_close($connect);
 
          <div class="d-flex justify-content-end">
             <a href="update.php?id=<?php echo $_SESSION['user'] ?>"><button class="btn update" type="button">Update your profile</button></a>
+            <a href="contuct.php"><button class="btn ms-2 update" type="button">Contuct us</button></a>
             <a href="logout.php?logout"><button class="btn ms-2 signout text-black border-0" type="button">Sign Out</button></a>
 
          </div>
